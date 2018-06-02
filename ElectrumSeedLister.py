@@ -1,5 +1,7 @@
 # ElectrumSeedLister
-# Copyright 2018 Marisa Heit
+# Copyright (C) 2011 thomasv@gitorious
+# Copyright (C) 2014 Thomas Voegtlin
+# Copyright (C) 2018 Marisa Heit
 #
 # Uses code from Electrum to generate a list of possible wallet seeds,
 # when you have a seed already but realize it isn't quite right. Works
@@ -87,6 +89,8 @@ def query_yes_no(question, default="yes"):
         an answer is required of the user).
 
     The "answer" return value is one of "yes" or "no".
+
+    Recipe from http://code.activestate.com/recipes/577058-query-yesno/
     """
     valid = {"yes":"yes",   "y":"yes",  "ye":"yes",
              "no":"no",     "n":"no"}
